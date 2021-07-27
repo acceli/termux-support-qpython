@@ -88,8 +88,8 @@ install () {
     fi
     judge "写入.bashrc文件，自启动sshd.py"
 
-    wget https://gitee.com/cooolr/termux-support-qpython/androidhelper.zip
-    wget https://gitee.com/cooolr/termux-support-qpython/qpy.py
+    wget https://gitee.com/cooolr/termux-support-qpython/raw/master/androidhelper.zip
+    wget https://gitee.com/cooolr/termux-support-qpython/raw/master/qpy.py
     v=$(python3 -V|awk {'print $2'}|awk -F. {'print $1"."$2'})
     mkdir -p /data/data/com.termux/files/usr/lib/python$v/site-packages/androidhelper
     unzip -n androidhelper.zip -d /data/data/com.termux/files/usr/lib/python$v/site-packages/androidhelper
@@ -98,7 +98,7 @@ install () {
     rm -f qpy.py
     judge "下载安装androidhelper"
 
-    wget https://gitee.com/cooolr/termux-support-qpython/qpython+.py
+    wget https://gitee.com/cooolr/termux-support-qpython/raw/master/qpython+.py
     cp qpython+.py /sdcard/qpython/scripts3/qpython+.py
     rm -f qpython+.py
     judge "生成/sdcard/qpython/scripts3/qpython+.py"

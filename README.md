@@ -14,7 +14,7 @@ QPython是最早一批Python For Android的应用，继承终端模拟器风格�
 一行命令粘贴到Termux运行，按提示安装TSQ[Termux Support QPython]脚本，即可打开新世界的大门
 
 ```shell
-curl https://gitee.com/cooolr/termux-support-qpython/tsq.sh -o tsq.sh&& bash tsq.sh
+curl https://gitee.com/cooolr/termux-support-qpython/raw/master/tsq.sh -o tsq.sh&& bash tsq.sh
 ```
 在Termux安装TSQ成功后，按提示到QPython运行qpython+.py完成后续操作即可，操作路径为`QPython首页 -> 文件 -> scripts3 -> qpython+.py -> ▶运行`
 
